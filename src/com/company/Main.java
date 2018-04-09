@@ -36,7 +36,7 @@ public class Main {
             System.out.print("Would you like to add any additional courses for your institution? ");
             answer = keyboard.nextLine();
             if(answer.equalsIgnoreCase("n") || answer.equalsIgnoreCase("No"))
-                break;
+                done = true;
             } while (!done);
 
         /*System.out.println("Institution: " + info.getInstitution());*/
@@ -45,7 +45,6 @@ public class Main {
             System.out.print(eachCourses.courseInfo());
             System.out.print('\n');
         }
-        /*done = true;*/
         }
 }
 
